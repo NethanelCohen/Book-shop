@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/library1.jpeg");
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: 'Inconsolata', monospace;
+    overflow: hidden;
+}
+
+h1 {
+    color: rgb(210, 240, 233);
+    font-size: 5rem;
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.new-book {
+    background-color: rgb(149, 221, 224);
+    border-radius: 10%;
+    font-size: 1.3rem;
+    margin-left: 32px;
+    margin-top: 64px;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.new-book:hover {
+    background-color: rgb(82, 205, 209);
+}
+
+table {
+    background-color: rgba(182, 168, 143, 0.89);
+    margin-inline-start: 2rem;
+}
+
+.books-container th {
+    border: 2px solid black;
+    background-color: rgb(238, 210, 173);
+}
+
+.books-container td {
+    color: rgb(23, 30, 37);
+    border: 1px solid black;
+    padding: 20px 30px;
+}
+
+.books-container tbody>* :first-child {
+    text-align: center;
+}
+
+.read-book,
+.update-book,
+.delete-book {
+    width: 170px;
+    height: 50px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.read-book {
+    background-color: rgb(113, 137, 214);
+}
+
+.read-book:hover {
+    background-color: rgb(99, 127, 219);
+}
+
+.update-book {
+    background-color: rgb(107, 226, 123);
+}
+
+.update-book:hover {
+    background-color: rgb(69, 209, 88);
+}
+
+.delete-book {
+    background-color: rgb(240, 162, 162);
+}
+
+.delete-book:hover {
+    background-color: rgb(231, 121, 121);
+}
+
+.rate-section {
+    display: flex;
+    width: 4rem;
+    justify-content: space-evenly;
+}
+
+.rate-section .book-rate {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modal {
+    background-color: rgba(148, 133, 122, 0.589);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 150%;
+    height: 60vh;
+    min-width: 300px;
+    text-align: center;
+}
+
+.open {
+    left: 70%;
+}
+
+.modal p {
+    text-align: left;
+}
+
+.modal img {
+    width: 20%;
+    height: 20%;
+}
+
+.modal button {
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+.modal h5 {
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal h5 button {
+    width: 40px;
+    height: 35px;
+    font-size: medium;
+    background-color: rgb(156, 218, 243);
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal h5 button:hover {
+    background-color: rgb(84, 194, 238);
+}
